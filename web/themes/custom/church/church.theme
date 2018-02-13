@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_preprocess().
+ */
+function church_preprocess(&$vars)
+{
+  $vars['theme_path'] = '/' . drupal_get_path('theme','church');
+}
